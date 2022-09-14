@@ -1,0 +1,170 @@
+
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery</title>
+    
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    
+      <!-- Google Analytics -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- <script async="" src="//www.google-analytics.com/analytics.js"></script><script> -->
+      <!-- function page_loaded() { -->
+      <!-- } -->
+      </script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+      <style type="text/css">
+        .normal {
+          font-size: 20px;
+        }
+      .center{
+        margin: auto;
+        text-align:left;
+        position: relative;
+        width:800px;
+      }
+      .center_vid{
+        margin: 0 auto;
+        display: block;
+      }
+      button{
+        margin:auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        display:block;
+      }
+      canvas{
+        margin:auto;
+        position:relative;
+        display:block;
+      }
+      </style>
+    </head>
+    <!-- <body onload="page_loaded()" cz-shortcut-listen="true">
+     -->
+    <div id="header">
+      <a href="https://marvl.stanford.edu/index.html">
+        <img src="img/marvl.png" style="height:90px; float: left; margin-left: 50px; margin-top:20px;">
+      </a>
+      <a href="http://stanford.edu/">
+        <img src="img/Stanford.png" style="height:100px; float: right; margin-right: 90px; margin-top:20px;">
+      </a>
+    
+      <br>
+      <center>
+        <span style="font-size:30px; font-family:\"Book Antiqua\", Sans-serif,serif;">Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery</span>
+        <br>
+        <span style="font-size:25px; font-family:\"Book Antiqua\", Sans-serif,serif;"><a href="https://3dvconf.github.io/2022/">International Conference on 3D Vision (3DV) 2022</a></span>
+        <br>
+        <span style="font-size:22px; font-family:\"Book Antiqua\", Sans-serif,serif;">
+            <a href="https://zzweng.github.io/">Zhenzhen Weng, </a>
+            <a href="https://wangkua1.github.io/">Kuan-Chieh Wang, </a>
+            <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa, </a>
+            <a href="http://ai.stanford.edu/~syyeung">Serena Yeung</a>
+        </span>
+      </center>
+      <br>
+    
+    
+    </div>
+    
+    <br>
+    <div style="justify-content: center;">
+      <center>
+        <div class="authorphoto"><img src="./assets/dapa_one_slide.jpg"></div>
+      </center>
+
+    </div>
+
+    <br>
+    <div class="sechighlight">
+      <h2 style="font-size:25px; font-family:Verdana, Geneva, sans-serif;">Abstract</h2>
+    <div class="abstract">
+    The ability to perceive 3D human bodies from a single image has a multitude of applications ranging from entertainment and robotics to neuroscience and healthcare. A fundamental challenge in human mesh recovery is in collecting the ground truth 3D mesh targets required for training, which requires burdensome motion capturing systems and is often limited to indoor laboratories. As a result, while progress is made on benchmark datasets collected in these restrictive settings, models fail to generalize to real-world ``in-the-wild'' scenarios due to distribution shifts. We propose Domain Adaptive 3D Pose Augmentation (DAPA), a data augmentation method that enhances the model's generalization ability in in-the-wild scenarios. DAPA combines the strength of methods based on synthetic datasets by getting direct supervision from the synthesized meshes, and domain adaptation methods by using ground truth 2D keypoints from the target dataset. We show quantitatively that finetuning with DAPA effectively improves results on benchmarks 3DPW and AGORA. We further demonstrate the utility of DAPA on a challenging dataset curated from videos of real-world parent-child interaction. 
+    </div>
+    <br>
+    <center>
+    <span style="font-size:25px; font-family:\"Book Antiqua\", Sans-serif,serif;">[<a href="https://arxiv.org/abs/2206.10457">Paper</a>] [<a href="assets/219_poster.pdf">Poster</a>]  [<a>Code (Coming)</a>]</span>
+  </center>
+    <br>
+    </div>
+    
+    <!-- <div style="justify-content: center;"> -->
+      <!-- <div>
+          <video id="demo-video" class="center_vid" controls muted preload="auto" width="800" height="450" data-setup="{}">
+            <source id="source0" src=219_video.mp4 type=video/mp4>
+          </video>
+      </div> -->
+
+    <!-- </div> -->
+
+
+    <div class="sechighlight">
+      <h2>Bibtex</h2>
+          If you find this project useful for your research, please cite
+      <pre style="font-size:12px;">
+        @article{weng2022domain,
+          title={Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery},
+          author={Weng, Zhenzhen and Wang, Kuan-Chieh and Kanazawa, Angjoo and Yeung, Serena},
+          journal={arXiv preprint arXiv:2206.10457},
+          year={2022}
+        }
+      </pre>
+    </div>
+    
+    
+    <!-- jQuery and Boostrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- Analytics -->
+    <script>
+    </script>
+    
+    <div></div>
+    <script>
+        var selected_set = ['v_XKOeu8n7R7s', 'v_G3xayqdY0TY','v_Pi79Fa4YwDk','v_KV0L45xelkE','v_8miqQQJEsO0','v_I6nuNE-Qibw','v_9PuaRdU6ViM','v_voaGOm-rl9Y','v_rDlPcW_2nG0','v_NSegylr0MBg']
+        var dataUrl = "web_demo.json";
+        var data = [];
+        var times = [];
+        console.log(Object.keys(data).length);
+    
+        // Get elements
+        // Initial constant setup
+        var total_num = selected_set.length;
+        var v_start = 50;
+        var space_between = 10;
+        var stroke_size = 10;
+        var video_num = 0;
+        // Total width of the play, volume, time and maximize button of video control bar
+        // Constant, independent of window size
+        var left_width = 108;
+        var right_width = 188;
+    
+        var cur_vid = ""
+        var cur_timestamps = [];
+        var cur_descriptions = [];
+        var badlist = [];
+    
+        function prepareData(index){
+            cur_vid = selected_set[video_num];
+            cur_timestamps = data[cur_vid]['timestamps'];
+            cur_descriptions = data[cur_vid]['sentences'];
+          }
+    
+        var colors = ["#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059","#FFDBE5", "#7A4900", "#0000A6", "#63FFAC", "#B79762", "#004D43", "#8FB0FF", "#997D87","#5A0007", "#809693", "#FEFFE6", "#1B4400", "#4FC601", "#3B5DFF", "#4A3B53", "#FF2F80","#61615A", "#BA0900", "#6B7900", "#00C2A0", "#FFAA92", "#FF90C9", "#B903AA", "#D16100","#DDEFFF", "#000035", "#7B4F4B", "#A1C299", "#300018", "#0AA6D8", "#013349", "#00846F","#372101", "#FFB500", "#C2FFED", "#A079BF", "#CC0744", "#C0B9B2", "#C2FF99", "#001E09","#00489C", "#6F0062", "#0CBD66", "#EEC3FF", "#456D75", "#B77B68", "#7A87A1", "#788D66","#885578", "#FAD09F", "#FF8A9A", "#D157A0", "#BEC459", "#456648", "#0086ED", "#886F4C","#34362D", "#B4A8BD", "#00A6AA", "#452C2C", "#636375", "#A3C8C9", "#FF913F", "#938A81","#575329", "#00FECF", "#B05B6F", "#8CD0FF", "#3B9700", "#04F757", "#C8A1A1", "#1E6E00","#7900D7", "#A77500", "#6367A9", "#A05837", "#6B002C", "#772600", "#D790FF", "#9B9700","#549E79", "#FFF69F", "#201625", "#72418F", "#BC23FF", "#99ADC0", "#3A2465", "#922329","#5B4534", "#FDE8DC", "#404E55", "#0089A3", "#CB7E98", "#A4E804", "#324E72", "#6A3A4C"];
+        
+      </script>
+    </body>
+    </html>
+    
