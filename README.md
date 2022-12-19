@@ -2,7 +2,17 @@
 Repository for 3DV2022 paper
 **Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery**  
 
+<p float="center">
+  <img src="./assets/Picture1.png" width="49%" />
+  <img src="./assets/smart_120_rotation.gif" width="49%" />
+</p>
+<p float="center">
+  <img src="./assets/Picture2.png" width="49%" />
+  <img src="./assets/smart_93_rotation.gif" width="49%" />
+</p>
+
 # Installation instructions
+Tested on Ubuntu 16.
 ```
 conda create -n dapa python==3.6.9
 conda activate dapa
@@ -13,8 +23,6 @@ cd human_body_prior; python setup.py install; cd ../
 1. Fetch the dependency data using the [script](https://github.com/nkolot/SPIN#fetch-data) from SPIN.
 2. Put the `smpl_uv.obj` [file](https://drive.google.com/drive/folders/1eLWSAN7GUH7wyJvOkgYeNxnhbjXoYQYt?usp=sharing) and `smpl` [model files](https://smpl.is.tue.mpg.de/), and VPoser prior [checkpoint](https://smpl-x.is.tue.mpg.de/) in `data` folder. Double check that the paths `SMPL_MODEL_DIR`, `VPOSER_PATH` and `UV_MESH_FILE` are set correctly in config.py
 3. Install the external dependency for the texture model using this [script](https://github.com/akanazawa/cmr/blob/master/external/install_external.sh)
-
-Here we include the instructions for running the AGORA experiments. Since the data acquiring and preprocessing for SEEDLingS is more involved, the instructions for SEEDLingS will be included in the final code release.
 
 # Training/Evaluation
 ## AGORA experiments
@@ -147,6 +155,9 @@ DATASET_NPZ_PATH is specified in config.py.
 ```
 ./scripts/finetune_gym.sh
 ```
+
+## Run on SEEDLingS
+Coming.
 
 
 # Acknowledgement
