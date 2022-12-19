@@ -1,19 +1,12 @@
-# DAPA_release
-Repository for 3DV2022 paper
-**Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery**  
+# Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery (3DV 2022)
+Domain Adaptive 3D Pose Augmentation (DAPA) is a data augmentation method that enhances the HMR model's generalization ability in **in-the-wild** scenarios. DAPA combines the strength of methods based on synthetic datasets by getting direct supervision from the synthesized meshes, and domain adaptation methods by using **only 2D keypoints** from the target dataset.
 
-# Examples on challenging sports poses in the wild.
+## Examples on challenging sports poses in the wild.
 <p float="center">
-  <img src="./assets/Picture3.gif" width="30%" />
-  <img src="./assets/Picture4.gif" width="30%" />
-</p>
-<p float="center">
-  <img src="./assets/Picture1.png" width="30%" />
-  <img src="./assets/smart_120_rotation.gif" width="30%" />
-</p>
-<p float="center">
-  <img src="./assets/Picture2.png" width="30%" />
-  <img src="./assets/smart_93_rotation.gif" width="30%" />
+  <img src="./assets/Picture1.png" width="20%" />
+  <img src="./assets/smart_120_rotation.gif" width="20%" />
+  <img src="./assets/Picture2.png" width="20%" />
+  <img src="./assets/smart_93_rotation.gif" width="20%" />
 </p>
 
 # Installation instructions
@@ -97,7 +90,7 @@ The finetuned checkpoint performance on the validation set is
 
 
 ### Run evaluation code
-1. First, clone and build [agora_evaluation](https://github.com/pixelite1201/agora_evaluation) to get the agora_evaluation cli. (Note: they assume a different smplx version, so the evaluation needs to be done in a different environment following their installation instructions.)
+1. First, clone and build [agora_evaluation](https://github.com/pixelite1201/agora_evaluation) to get the agora_evaluation cli.
 2. Prepare prediction files. 
 ```bash
 name=spin_ft
@@ -156,7 +149,7 @@ python demo/preprocess_from_keypoints_video.py --input_path ./demo --out_path DA
 ```
 DATASET_NPZ_PATH is specified in config.py.
 
-4. Last step is to add the new dataset to `DATASET_FILES` and `DATASET_FOLDERS` in `config.py`, and run the training script.
+4. Add the new dataset to `DATASET_FILES` and `DATASET_FOLDERS` in `config.py`, and run the training script.
 ```
 ./scripts/finetune_gym.sh
 ```
