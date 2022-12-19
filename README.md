@@ -2,13 +2,18 @@
 Repository for 3DV2022 paper
 **Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery**  
 
+# Examples on challenging sports poses in the wild.
 <p float="center">
-  <img src="./assets/Picture1.png" width="49%" />
-  <img src="./assets/smart_120_rotation.gif" width="49%" />
+  <img src="./assets/Picture3.gif" width="30%" />
+  <img src="./assets/Picture4.gif" width="30%" />
 </p>
 <p float="center">
-  <img src="./assets/Picture2.png" width="49%" />
-  <img src="./assets/smart_93_rotation.gif" width="49%" />
+  <img src="./assets/Picture1.png" width="30%" />
+  <img src="./assets/smart_120_rotation.gif" width="30%" />
+</p>
+<p float="center">
+  <img src="./assets/Picture2.png" width="30%" />
+  <img src="./assets/smart_93_rotation.gif" width="30%" />
 </p>
 
 # Installation instructions
