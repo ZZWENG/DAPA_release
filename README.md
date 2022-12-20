@@ -1,4 +1,6 @@
 # Domain Adaptive 3D Pose Augmentation for In-the-wild Human Mesh Recovery (3DV 2022)
+[Project Page](https://zzweng.github.io/DAPA_release/)  |  [Paper](https://arxiv.org/abs/2206.10457)  |  [Poster](https://zzweng.github.io/DAPA_release/219_poster.pdf)
+
 Domain Adaptive 3D Pose Augmentation (DAPA) is a data augmentation method that enhances the HMR model's generalization ability in **in-the-wild** scenarios. DAPA combines the strength of methods based on synthetic datasets by getting direct supervision from the synthesized meshes, and domain adaptation methods by using **only 2D keypoints** from the target dataset.
 
 ## Examples on challenging sports poses in the wild.
